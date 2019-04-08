@@ -1,0 +1,4 @@
+.carousel-fade .carousel-item
+{
+    transition: transform 4s ease, opacity 2s ease-out;
+}

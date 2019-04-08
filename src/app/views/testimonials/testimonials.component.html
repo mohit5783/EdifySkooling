@@ -1,0 +1,29 @@
+<div innerHtml="{{imgshow}}"></div>
+<h1 class="text-center">Review, Feedback, Praises and Testimony for Edify Skooling</h1>
+<div id="carouselTestimonials" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5500">
+  <ol class="carousel-indicators">
+    <li *ngFor="let num of TestimonialCarouselCount" data-target="#carouselTestimonials" [attr.data-slide-to]="num"
+      class="{{num == 0 ? 'active' : ''}}"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div *ngFor="let objcar of objCarouselTestimonial" class="carousel-item {{objcar.ind == 1 ? 'active':''}}">
+        <!-- <a href="{{objcar.source}}" class="progressive replace">
+            <img src="{{objcar.tinysource}}" class="preview" alt="{{objcar.alternate}}" />
+          </a> -->
+      <img class="d-block img-fluid ml-auto mr-auto" src="{{objcar.source}}" alt="{{objcar.alternate}}" />
+      <div class="carousel-caption d-none d-md-block">
+        <h3>{{objcar.heading}}</h3>
+        <p>{{objcar.desc}}</p>
+        <p class="text-right">&#8213;&#8213; {{objcar.PersonName}}</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselTestimonials" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselTestimonials" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

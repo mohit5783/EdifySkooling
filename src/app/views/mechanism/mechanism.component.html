@@ -1,0 +1,83 @@
+<div innerHtml="{{imgshow}}"></div>
+<div class="container">
+  <div class="row">
+    <h1>Edify Skooling - Overview</h1>
+    <p>Edify Skooling is one of the world's most comprehensive ERP solution ever designed for managing schools and any
+      educational institution. It has become a leader in the bandwagon of School Management System integrated with the
+      mobile application. Edify Skooling is a powerful online community that brings an educational institution's
+      management, parents, teachers, and students on one common interactive platform. We provides a cloud-based
+      solution with complete automated experience with all backend administration and data management activities of the
+      institution. We support over numerous schools and colleges in multiple countries with 73 languages.</p>
+    <p>The application's flexibility and ease of access enables your institution to choose, customize and deploy the
+      modules based on your unique requirements. Its fully integrated and advanced set of modules enhance teaching,
+      learning, information-sharing, administration, and data management. Hence, Edify Skooling augments the
+      institution's brand image and reputation with increased efficiency, productivity and profitability.</p>
+    <h2>Administration</h2>
+    <p>Administration and management of schools, colleges, universities and educational institute is a very tedious
+      task. Edify Skooling helps in making this simple and easy. Edify Skooling brings forward the effective
+      communication of students, parents, teachers and others on a common platform which makes administration
+      transparent and more trust
+      worthy.</p>
+    <a href='assets/images/mechanism/ScreenShots/admindashboard.jpg' class='progressive replace img-fluid'>
+      <img src='assets/images/mechanism/ScreenShots/admindashboardtiny.jpg' class='preview' alt='image' />
+    </a>
+    <p class="w-100 text-center">A glimpse of the Admin dashboard</p>
+    <p>All the administrative activities of the institutions can be easily completed as Edify Skooling is a very
+      efficient solution that is very robust and could be accessed from anywhere with an internet connection. It helps
+      in increasing the performance of the institution and its brand value.</p>
+    <h2>Edify Skooling : Admin Modules</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col md-auto">
+          <a href='assets/images/mechanism/ScreenShots/Menu.gif' class='progressive replace img-fluid'>
+            <img src='assets/images/mechanism/ScreenShots/fullmenu.jpg' class='preview' alt='image' />
+          </a>
+        </div>
+        <div class="col-9">
+          <h3>The Navigation Menu of Edify Skooling.</h3>
+          <p>The navigation menu of <strong>Edify Skooling</strong> will be shown at the left side bar of the screen.
+            Navigation menus define the main content or modules that you can access in the Edify Skooling.</p>
+          <ul>
+            <li>Front Office</li>
+            <li>Student Information</li>
+            <li>Fees Collection</li>
+            <li>Income</li>
+            <li>Expenses</li>
+            <li>Attendance</li>
+            <li>Examinations</li>
+            <li>Academics</li>
+            <li>Human Resource</li>
+            <li>Communicate</li>
+            <li>Download Center</li>
+            <li>Homework</li>
+            <li>Library</li>
+            <li>Inventory</li>
+            <li>Transport</li>
+            <li>Hostel</li>
+            <li>Certificate</li>
+            <li>Front CMS</li>
+            <li>Reports</li>
+            <li>System Settings</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-justify">
+      <table class="table-responsive">
+        <ng-container *ngFor="let mp of objMechanism">
+          <tr>
+            <td width="80"><img class="mt-2" src="{{mp.source}}" alt="{{mp.alternate}}" /></td>
+            <td class="text-left">
+              <h5>{{mp.title}}</h5>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p class="text-justify px-2" [innerHTML]="mp.text"> </p>
+            </td>
+          </tr>
+        </ng-container>
+      </table>
+    </div>
+  </div>
+</div>

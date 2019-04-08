@@ -1,0 +1,17 @@
+.transMenu 
+{
+	background: rgba(255,255,255,.8);
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+	border-width: 1px;
+	
+}
+.navbar-light .navbar-nav .nav-link 
+{
+	color: rgba(0,0,0);
+}
+nav a.nav-link:hover
+{
+	background: rgb(0, 0, 0);
+	font-weight: bolder;
+	color: rgba(255,255,255) !important;
+}

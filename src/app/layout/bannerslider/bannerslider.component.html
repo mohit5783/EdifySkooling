@@ -1,0 +1,25 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2500">
+  <ol class="carousel-indicators">
+    <li *ngFor="let num of msCarousel" data-target="#carouselExampleIndicators" [attr.data-slide-to]="num" class="{{num == 0 ? 'active' : ''}}"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div *ngFor="let objcar of objCarousel" class="carousel-item {{objcar.ind == 1 ? 'active':''}}">
+      <!-- <a href="{{objcar.source}}" class="progressive replace">
+        <img src="{{objcar.tinysource}}" class="preview" alt="{{objcar.alternate}}" />
+      </a> -->
+      <img class="d-block img-fluid ml-auto mr-auto" src="{{objcar.source}}" alt="{{objcar.alternate}}" />
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h3>{{objcar.heading}}</h3>
+        <p>{{objcar.desc}}</p>
+      </div> -->
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

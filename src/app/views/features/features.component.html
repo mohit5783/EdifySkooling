@@ -1,0 +1,14 @@
+<div innerHtml="{{imgshow}}"></div>
+<h1 class="text-center">Edify Skooling: Features</h1>
+<div class="card-columns m-3">
+  <div class="card text-center m-1 px-1" *ngFor="let mp of objFeatures">
+    <img class="card-img-top mt-1" src="{{mp.source}}" alt="{{mp.alternate}}" />
+    <div class="card-block">
+      <h3 class="card-title">{{mp.title}}</h3>
+      <p class="card-text">{{mp.text}}</p>
+    </div>
+    <!-- <div class="card-footer">
+				<a href="#" class="btn btn-primary">{{mp.btnText}}</a>
+		  </div> -->
+  </div>
+</div>

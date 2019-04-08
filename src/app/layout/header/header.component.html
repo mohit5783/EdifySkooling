@@ -1,0 +1,41 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-inverse navbar-light transMenu">
+  <a class="navbar-brand logo" href="#">
+    <img src="assets/images/logo.svg" height="32" alt="" class="d-inline-block">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav navbar-nav">
+      <li *ngFor="let menu of msMenu" class="nav-item {{menu == activeMenu ? 'active':''}}">
+        <a class="nav-link" routerLink="{{menu.MenuRoute}}"><span class="{{menu.MenuIcon}} SocialIcons"></span>{{menu.MenuName}}<span class="sr-only" *ngIf="menu == activeMenu">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="https://github.com/edifyskooling" target="_blank">
+        <i class="fa fa-github fa-lg SocialIcons"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://twitter.com/ESkooling" target="_blank">
+        <i class="fa fa-twitter fa-lg SocialIcons"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://fb.me/EdifySchooling" target="_blank">
+        <i class="fa fa-facebook fa-lg SocialIcons"></i>
+      </a>
+      <a class="nav-item nav-link" href="https://www.linkedin.com/company/edifyskooling/" target="_blank">
+        <i class="fa fa-linkedin fa-lg SocialIcons"></i>
+      </a>
+      <!-- <a class="nav-item nav-link" href="#" target="_blank">
+        <i class="fa fa-instagram fa-lg SocialIcons"></i>
+      </a> -->
+      <a class="nav-item nav-link" href="https://plus.google.com/104000078216599600577" target="_blank">
+        <i class="fa fa-google fa-lg SocialIcons"></i>
+      </a>
+      <!-- <a class="nav-item nav-link" href="#" target="_blank">
+        <i class="fa fa-pinterest fa-lg SocialIcons"></i>
+      </a> -->
+    </div>
+  </div>  
+</nav>
+
